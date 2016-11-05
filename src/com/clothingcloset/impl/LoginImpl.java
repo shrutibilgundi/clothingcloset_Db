@@ -15,9 +15,8 @@ public class LoginImpl implements Login {
 	LoginHandler loginHandler = new LoginHandler();
 
 	@Override
-	public boolean registerPerson(Person person) {
-		loginHandler.registerPerson(person);
-		return false;
+	public boolean registerPerson(Person person){
+		return loginHandler.registerPerson(person);
 	}
 
 	@Override

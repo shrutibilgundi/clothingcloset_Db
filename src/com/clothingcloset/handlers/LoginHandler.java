@@ -22,11 +22,11 @@ public class LoginHandler {
 
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
-			
-			String sql = "INSERT INTO PERSON (ID,FIRST_NAME,LAST_NAME,GENDER,MOBILE_NUMBER,STREET,CITY,STATE,PINCODE) VALUES ( "+
-			person.getId()+","+person.getFirstName()+","+person.getLastName()+
-			","+person.getGender()+","+person.getMobileNumber()+","+person.getStreet()+","+person.getCity()+","+person.getState()+","+person.getPincode()+");";
-			
+
+			String sql = "INSERT INTO PERSON_TABLE (FIRST_NAME,LAST_NAME,GENDER,MOBILE_NUMBER,STREET,CITY,STATE,PINCODE) VALUES ( '"
+					+ person.getFirstName() + "','" + person.getLastName() + "','" + person.getGender() + "',"
+					+ person.getMobileNumber() + ",'" + person.getStreet() + "','" + person.getCity() + "','"
+					+ person.getState() + "'," + person.getPincode() + ");";
 
 			System.out.println("SQL Query is : " + sql);
 			stmt.executeUpdate(sql);
