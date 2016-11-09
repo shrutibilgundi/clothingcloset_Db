@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="ClothingClosetApplication">
+    <wb-module deploy-name="ClothingCloset">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <property name="context-root" value="ClothingClosetApplication"/>
-        <property name="java-output-path" value="/ClothingClosetApplication/build/classes"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="ClothingCloset"/>
+        <property name="java-output-path" value="/ClothingCloset/build/classes"/>
     </wb-module>
 </project-modules>

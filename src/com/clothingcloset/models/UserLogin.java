@@ -2,15 +2,17 @@ package com.clothingcloset.models;
 
 public class UserLogin {
 
-	private String userName;
+	private String email;
 	private String password;
 	private Integer id;
-	private String userType;
-	public String getUserName() {
-		return userName;
+	private String subscription;
+	private String role;
+	
+	public String getEmail() {
+		return email;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getPassword() {
 		return password;
@@ -24,12 +26,16 @@ public class UserLogin {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getUserType() {
-		return userType;
+	public String getSubscription() {
+		return subscription;
 	}
-	public void setUserType(String userType) {
-		this.userType = userType;
+	public void setSubscription(String subscription) {
+		this.subscription = subscription;
 	}
-	
-	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
 }

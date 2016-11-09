@@ -1,22 +1,36 @@
 package com.clothingcloset.impl;
 
+import org.springframework.stereotype.Component;
+
 import com.clothingcloset.api.Login;
 import com.clothingcloset.handlers.LoginHandler;
+import com.clothingcloset.models.PBLStaff;
+import com.clothingcloset.models.Person;
 import com.clothingcloset.models.UserLogin;
 
-public class LoginImpl implements Login{
+@Component
+public class LoginImpl implements Login {
 
-	//Declarations
+	// Declarations
 	LoginHandler loginHandler = new LoginHandler();
 
 	@Override
-	public boolean validateUser(final UserLogin userLogin) {
+	public boolean registerPerson(Person person){
+		return loginHandler.registerPerson(person);
+	}
+
+	@Override
+	public boolean validateUser(UserLogin userLogin) {
+		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean registerUser(final UserLogin userLogin) {
-		return loginHandler.registerUser(userLogin.getUserName(), userLogin.getPassword(), userLogin.getId(), userLogin.getUserType());
+	public boolean validatePBLStaff(PBLStaff pblStaff) {
+		// TODO Auto-generated method stub
+		return false;
 	}
+
+	
 
 }
